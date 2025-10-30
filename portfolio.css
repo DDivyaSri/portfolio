@@ -235,7 +235,6 @@
 
 
  
-
 .skills-section {
     max-width: 900px;
     margin: 40px auto;
@@ -275,12 +274,12 @@
 
 .skill-bar {
     flex: 4 1 400px;
-    height: 3px;
+    height: 18px;
     background: #e6eafe;
     margin-left: 30px;
     position: relative;
     border-radius: 2px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .bar-fill {
@@ -288,6 +287,24 @@
     background: #5b67cc;
     border-radius: 2px;
     transition: width 1s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.bar-percentage {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    background: transparent;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
 }
 
 .skill-divider {
@@ -310,10 +327,8 @@
         margin-top: 7px;
         width: 100%;
     }
-    .skill-bar:hover .bar-fill {
-  opacity: 1;
 }
-}
+
 .awards-interests-section {
     display: flex;
     justify-content: space-between;
@@ -631,3 +646,4 @@ body, html {
   .navbar {
     position: static;
   }
+
